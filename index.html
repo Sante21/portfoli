@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/img/faviconWhite.png" type="image/x-icon">
     <script src="script-head.js"></script>
     <link rel="stylesheet" href="style.css">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -41,8 +42,8 @@
                             <a class="nav-link active fw-semibold" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown px-2">
-                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 M06
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -78,126 +79,123 @@
     </header>
 
     <main>
-        <div class="d-flex flex-column align-items-center justify-content-center bg-origin" id="sobre-mi">
+        <section class="d-flex flex-column align-items-center justify-content-center bg-origin" id="sobre-mi">
             <div class="container">
-                <div class="row align-items-center text-center text-md-start">
+                <div class="row text-center text-md-start">
+                    <!-- Yo -->
                     <div class="col-12 d-flex flex-wrap justify-content-evenly align-items-center gap-3">
-                        <h2 class="fs-1 m-0">IKER</h2>
-                        <img src="img/Iker Sánchez.png" alt="Iker Sánchez" class="img-fluid yo-img"
-                            style="max-height: 110mm;">
-                        <h2 class="fs-1 m-0">SÁNCHEZ</h2>
+                        <h2 class="fs-1">IKER</h2>
+                        <img src="img/Iker Sánchez.png" alt="Iker Sánchez" class="img-fluid yo-img">
+                        <h2 class="fs-1">SÁNCHEZ</h2>
                     </div>
 
-                    <div class="col-12 mt-4">
-                        <p class="fw-bolder fs-5 text mx-auto" style="max-width: 600px;">
-                            Soy Iker, un estudiante de Desarrollo de Aplicaciones Web con 1 año de experiencia en el
-                            campo.
+                    <div class="col-12 mt-4 text-center">
+                        <!-- Descripcion -->
+                        <p class="fw-bold fs-5 mx-auto descrip">
+                            Soy Iker, un estudiante de Desarrollo de Aplicaciones Web con 1 año de experiencia.
                             Puedo crear sitios web rápidamente usando WordPress.
                         </p>
 
-                        <div class="d-flex justify-content-center gap-4 m-5">
-                            <a href="https://github.com/Sante21" target="_blank"
-                                class="text-decoration-none invert-theme-link"><i
+                        <!-- Xarxes Socials -->
+                        <div class="d-flex justify-content-center gap-4 my-5">
+                            <a href="https://github.com/Sante21" target="_blank" class="invert-theme-link"><i
                                     class="fa-brands fa-github fs-1"></i></a>
                             <a href="https://www.linkedin.com/in/iker-s%C3%A1nchez-tendero/" target="_blank"
-                                class="text-decoration-none invert-theme-link"><i
-                                    class="fa-brands fa-linkedin fs-1"></i>
+                                class="invert-theme-link"><i class="fa-brands fa-linkedin fs-1"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- <hr class="m-0 sep"> -->
-        <div class="sep"></div>
-        
-        <div class="d-flex flex-column align-items-center justify-content-center bg-skills" id="sobre-mi">
-            <div class="container">
-                <div class="row align-items-center text-center text-md-start">
-                    <h2 class="fs-1 m-0 mb-3 mt-5 text-center fw-bolder">SKILLS</h2>
+        </section>
 
-                    <div class="container-fluid mt-5">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 m-2">
-                            <!-- HTML -->
-                            <div class="col mt-5">
-                                <div class="d-flex flex-column align-items-center gap-3">
-                                    <div class="d-flex justify-content-center align-items-center skill bg-html">
-                                        <img class="logo" src="img/skills/html.png" alt="HTML Logo">
-                                    </div>
-                                    <p class="fs-4 d-inline-block m-0 fw-bolder">HTML</p>
+        <div class="sep"></div>
+
+        <section class="d-flex flex-column align-items-center justify-content-center bg-skills">
+            <div class="container">
+                <h2 class="fs-1 fw-bold text-center mt-5 mb-3">SKILLS</h2>
+
+                <!-- Skills -->
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 m-2">
+                        <!-- HTML -->
+                        <div class="col mt-5">
+                            <div class="d-flex flex-column align-items-center gap-3">
+                                <div class="d-flex justify-content-center align-items-center skill bg-html">
+                                    <img class="logo" src="img/skills/html.png" alt="HTML Logo">
                                 </div>
+                                <p class="fs-4 fw-bolder">HTML</p>
                             </div>
-                            <!-- CSS -->
-                            <div class="col mt-5">
-                                <div class="d-flex flex-column align-items-center gap-3">
-                                    <div class="d-flex justify-content-center align-items-center skill bg-css">
-                                        <img class="logo" src="img/skills/css.png" alt="CSS Logo">
-                                    </div>
-                                    <p class="fs-4 d-inline-block m-0 fw-bolder">CSS</p>
+                        </div>
+                        <!-- CSS -->
+                        <div class="col mt-5">
+                            <div class="d-flex flex-column align-items-center gap-3">
+                                <div class="d-flex justify-content-center align-items-center skill bg-css">
+                                    <img class="logo" src="img/skills/css.png" alt="CSS Logo">
                                 </div>
+                                <p class="fs-4 fw-bolder">CSS</p>
                             </div>
-                            <!-- JS -->
-                            <div class="col mt-5">
-                                <div class="d-flex flex-column align-items-center gap-3">
-                                    <div class="d-flex justify-content-center align-items-center skill bg-js">
-                                        <img class="logo" src="img/skills/javascript.png" alt="CSS Logo">
-                                    </div>
-                                    <p class="fs-4 d-inline-block m-0 fw-bolder">JavaScript</p>
+                        </div>
+                        <!-- JS -->
+                        <div class="col mt-5">
+                            <div class="d-flex flex-column align-items-center gap-3">
+                                <div class="d-flex justify-content-center align-items-center skill bg-js">
+                                    <img class="logo" src="img/skills/javascript.png" alt="CSS Logo">
                                 </div>
+                                <p class="fs-4 fw-bolder">JavaScript</p>
                             </div>
-                            <!-- PHP -->
-                            <div class="col mt-5">
-                                <div class="d-flex flex-column align-items-center gap-3">
-                                    <div class="d-flex justify-content-center align-items-center skill bg-php">
-                                        <img class="logo" src="img/skills/php.png" alt="PHP Logo">
-                                    </div>
-                                    <p class="fs-4 d-inline-block m-0 fw-bolder">PHP</p>
+                        </div>
+                        <!-- PHP -->
+                        <div class="col mt-5">
+                            <div class="d-flex flex-column align-items-center gap-3">
+                                <div class="d-flex justify-content-center align-items-center skill bg-php">
+                                    <img class="logo" src="img/skills/php.png" alt="PHP Logo">
                                 </div>
+                                <p class="fs-4 fw-bolder">PHP</p>
                             </div>
-                            <!-- WP -->
-                            <div class="col mt-5">
-                                <div class="d-flex flex-column align-items-center gap-3">
-                                    <div class="d-flex justify-content-center align-items-center skill bg-wp">
-                                        <img class="logo" src="img/skills/wordpress.png" alt="WordPress Logo">
-                                    </div>
-                                    <p class="fs-4 d-inline-block m-0 fw-bolder">WordPress</p>
+                        </div>
+                        <!-- WP -->
+                        <div class="col mt-5">
+                            <div class="d-flex flex-column align-items-center gap-3">
+                                <div class="d-flex justify-content-center align-items-center skill bg-wp">
+                                    <img class="logo" src="img/skills/wordpress.png" alt="WordPress Logo">
                                 </div>
+                                <p class="fs-4 fw-bolder">WordPress</p>
                             </div>
-                            <!-- Github -->
-                            <div class="col mt-5">
-                                <div class="d-flex flex-column align-items-center gap-3">
-                                    <div class="d-flex justify-content-center align-items-center skill bg-git">
-                                        <img class="logo" src="img/skills/github.png" alt="Github Logo">
-                                    </div>
-                                    <p class="fs-4 d-inline-block m-0 fw-bolder">GitHub</p>
+                        </div>
+                        <!-- Github -->
+                        <div class="col mt-5">
+                            <div class="d-flex flex-column align-items-center gap-3">
+                                <div class="d-flex justify-content-center align-items-center skill bg-git">
+                                    <img class="logo" src="img/skills/github.png" alt="Github Logo">
                                 </div>
+                                <p class="fs-4 fw-bolder">GitHub</p>
                             </div>
-                            <!-- Bootstrap -->
-                            <div class="col mt-5">
-                                <div class="d-flex flex-column align-items-center gap-3">
-                                    <div class="d-flex justify-content-center align-items-center skill bg-bootstrap">
-                                        <img class="logo" src="img/skills/bootstrap.png" alt="Bootstrap Logo">
-                                    </div>
-                                    <p class="fs-4 d-inline-block m-0 fw-bolder">Bootstrap</p>
+                        </div>
+                        <!-- Bootstrap -->
+                        <div class="col mt-5">
+                            <div class="d-flex flex-column align-items-center gap-3">
+                                <div class="d-flex justify-content-center align-items-center skill bg-bootstrap">
+                                    <img class="logo" src="img/skills/bootstrap.png" alt="Bootstrap Logo">
                                 </div>
+                                <p class="fs-4 fw-bolder">Bootstrap</p>
                             </div>
-                            <!-- Java -->
-                            <div class="col mt-5">
-                                <div class="d-flex flex-column align-items-center gap-3">
-                                    <div class="d-flex justify-content-center align-items-center skill bg-java">
-                                        <img class="logo" src="img/skills/java.png" alt="Java Logo">
-                                    </div>
-                                    <p class="fs-4 d-inline-block m-0 fw-bolder">Java</p>
+                        </div>
+                        <!-- Java -->
+                        <div class="col mt-5">
+                            <div class="d-flex flex-column align-items-center gap-3">
+                                <div class="d-flex justify-content-center align-items-center skill bg-java">
+                                    <img class="logo" src="img/skills/java.png" alt="Java Logo">
                                 </div>
+                                <p class="fs-4 fw-bolder">Java</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+
 
 </body>
 

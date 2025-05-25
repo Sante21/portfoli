@@ -38,18 +38,22 @@ img.yo-img:hover {
     transform: scale(1.05);
 }
 
-[data-bs-theme="light"] div#logo {
+p.descrip {
+    max-width: 600px;
+}
+
+div#logo {
     height: 7mm;
     width: 34mm;
-    background-image: url(/img/logoBlack.png);
     background-size: contain;
 }
 
+[data-bs-theme="light"] div#logo {
+    background-image: url(/img/logoBlack.png);
+}
+
 [data-bs-theme="dark"] div#logo {
-    height: 7mm;
-    width: 34mm;
     background-image: url(/img/logoWhite.png);
-    background-size: contain;
 }
 
 [data-bs-theme="light"] a.invert-theme-link {
@@ -60,28 +64,26 @@ img.yo-img:hover {
     color: white;
 }
 
-[data-bs-theme="light"] .bg-origin {
+.bg-origin,
+.bg-skills {
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/img/montaña.jpg);
     background-size: cover;
+}
+
+[data-bs-theme="light"] .bg-origin {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/img/montaña.jpg);
 }
 
 [data-bs-theme="dark"] .bg-origin {
-    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/Bosque\ Dark.jpg);
-    background-size: cover;
 }
 
 [data-bs-theme="light"] .bg-skills {
-    width: 100%;
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/img/bgSkill.jpg);
-    background-size: cover;
 }
 
 [data-bs-theme="dark"] .bg-skills {
-    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/bgSkill.jpg);
-    background-size: cover;
 }
 
 [data-bs-theme="light"] div.sep {
@@ -92,19 +94,19 @@ img.yo-img:hover {
     border: 1px solid #ffffff;
 }
 
-div.skill > img.logo {
-    width: 30mm;
-}
-
 div.skill {
     border-radius: 50%;
-    height: 40mm;
-    width: 40mm;
-    /* padding: 20mm; */
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.card {
-    display: flex;
+div.skill>img.logo {
+    width: 60%;
+    height: auto;
 }
 
 img.cardimg {
@@ -117,8 +119,6 @@ img.cardimg {
 div.card {
     height: 140mm;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-around; */
     align-items: end;
     justify-content: end;
     margin-bottom: 4mm;

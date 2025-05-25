@@ -10,13 +10,19 @@ if (temaGuardado === null) {
 
 document.documentElement.setAttribute('data-bs-theme', temaInicial);
 
-function updateFavicon() {
-    const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const favicon = document.getElementById('favicon');
-    favicon.href = darkMode ? '/img/faviconBlack.png' : '/img/faviconWhite.png';
+// Detecta el modo del sistema operativo
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+// Función para actualizar el favicon según el modo del navegador
+function actualizarFaviconPorPreferencia(oscuro) {
+    const favicon = document.querySelector('link[rel="shortcut icon"]');
+    if (favicon) {
+        favicon.href = oscuro ? '/img/faviconWhite.png' : '/img/faviconBlack.png';
+    }
 }
 
-updateFavicon();
+actualizarFaviconPorPreferencia(prefersDarkScheme.matches);
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
-
+prefersDarkScheme.addEventListener('change', (e) => {
+    actualizarFaviconPorPreferencia(e.matches);
+});
