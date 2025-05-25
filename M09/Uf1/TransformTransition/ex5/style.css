@@ -1,0 +1,28 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i.fa-solid.fa-bell {
+    font-size: 15em;
+    color: #FDD007;
+    animation: campaneta 1.3s infinite;
+    filter: drop-shadow(grey 2mm 2mm 2mm);
+}
+
+@keyframes campaneta {
+    0% {transform-origin: top center; transform: rotate(0deg);}
+    10% {transform-origin: top center; transform: rotate(30deg);}
+    20% {transform-origin: top center; transform: rotate(-30deg);}
+    30% {transform-origin: top center; transform: rotate(20deg);}
+    40% {transform-origin: top center; transform: rotate(-20deg);}
+    50% {transform-origin: top center; transform: rotate(10deg);}
+    60% {transform-origin: top center; transform: rotate(-10deg);}
+    70% {transform-origin: top center; transform: rotate(5deg);}
+    80% {transform-origin: top center; transform: rotate(-5deg);}
+    90% {transform-origin: top center; transform: rotate(0deg);}
+    100% {transform-origin: top center; transform: rotate(0deg);}
+}

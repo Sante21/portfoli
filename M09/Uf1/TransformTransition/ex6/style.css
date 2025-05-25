@@ -1,0 +1,66 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.padre {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+        "rojo amarillo"
+        "azul verde";
+    position: absolute;
+    z-index: 1;
+}
+
+div.divRojo {
+    width: 20mm;
+    height: 20mm;
+    background-color: #F10904;
+    grid-area: rojo;
+    transition: 2s;
+}
+
+div.divAmarillo {
+    width: 20mm;
+    height: 20mm;
+    background-color: #FFFC03;
+    grid-area: amarillo;
+    transition: 2s;
+}
+
+div.divAzul {
+    width: 20mm;
+    height: 20mm;
+    background-color: #0F2DFF;
+    grid-area: azul;
+    transition: 2s;
+}
+
+div.divVerde {
+    width: 20mm;
+    height: 20mm;
+    background-color: #357F00;
+    grid-area: verde;
+    transition: 2s;
+}
+
+.padre:hover > .divRojo {
+    transform: translateX(-15mm) rotate(90deg);
+}
+
+.padre:hover > .divAmarillo {
+    transform: translateX(15mm) rotate(-90deg);
+}
+
+.padre:hover > .divAzul {
+    transform: translateX(-15mm) rotate(90deg);
+}
+
+.padre:hover > .divVerde {
+    transform: translateX(15mm) rotate(-90deg);
+}

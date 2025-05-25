@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+
+</head>
+
+<body>
+    <h1>Fibonacci</h1>
+    <script>
+        function fibonacci(limit) {
+            let ultimVal = null;
+            let penulVal = null;
+
+            for (let i = 0; i < limit; i++) {
+                if (ultimVal == null) {
+                    ultimVal = 0;
+                } else if (ultimVal == 0) {
+                    ultimVal = 1;
+                } else {
+                    aux = penulVal + ultimVal;
+                    penulVal = ultimVal;
+                    ultimVal = aux;
+                }
+                document.write(ultimVal + "<br>");
+            }
+        }
+        fibonacci(50);
+    </script>
+</body>
+
+</html>

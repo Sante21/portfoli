@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Fuente;
+    src: url(Fuentes/Dead\ Kansas.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --iker: rgba(73, 63, 124, 0.966);
+}
+
+body {
+    font-family: Fuente;
+    color: var(--iker);
+    /* background-image: url(/Solitari/Cartas/10_of_hearts.png);
+    background-repeat: no-repeat; */
+}
+
+img.si {
+    height: 90mm;
+    filter: drop-shadow(gray 2mm 2mm 2mm);
+    transition: 2s;
+}
+
+
+img:hover {
+    transform: rotate(-360deg);
+}
+
+div.banner {
+    height: 60mm;
+    width: 100vw;
+    background-image: linear-gradient(to right, var(--iker), black);
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 15fr 15fr 5fr;
+    grid-template-areas: 
+    "header header"
+    "section aside"
+    "article aside"
+    "footer footer";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: red;
+}
+
+section {
+    grid-area: section;
+    background-color: blue;
+}
+
+article {
+    grid-area: article;
+    background-color: green;
+}
+
+aside {
+    grid-area: aside;
+    background-color: yellow;
+}
+
+footer {
+    grid-area: footer;
+    background-color: palevioletred;
+}

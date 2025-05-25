@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <style>
+        .light {
+            border: 2px solid black;
+        }
+        #red {
+            background-color: red;
+            margin-right: 2mm;
+        }
+
+        #red.light {
+            background-color: rgb(255, 143, 143);
+            margin-right: 2mm;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #green.light {
+            background-color: rgb(139, 228, 139);
+        }
+
+        #yellow {
+            background-color: yellow;
+            margin-right: 2mm;
+        }
+
+        #yellow.light {
+            background-color: rgb(255, 255, 142);
+            margin-right: 2mm;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #blue.light {
+            background-color: rgb(123, 123, 255);
+        }
+
+        div.padre1 {
+            display: flex;
+            width: 100mm;
+            margin-bottom: 2mm;
+        }
+
+        div.padre2 {
+            display: flex;
+            width: 100mm;
+            margin-bottom: 5mm;
+        }
+
+        div>div {
+            border-radius: 3mm;
+            width: 50mm;
+            height: 50mm;
+            border: 2px solid white;
+        }
+
+        button {
+            width: 25mm;
+            height: 9mm;
+            background-color: rgb(202, 202, 202);
+            border: 0px;
+            color: black;
+            border-radius: 5mm;
+            box-shadow: gray 1mm 1mm 1mm;
+            transition: 0.2s;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        button:active {
+            box-shadow: gray 0mm 0mm 0mm;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="padre1">
+        <div id="red" onclick="clickColor('red')"></div>
+        <div id="green" onclick="clickColor('green')"></div>
+    </div>
+    <div class="padre2">
+        <div id="yellow" onclick="clickColor('yellow')"></div>
+        <div id="blue" onclick="clickColor('blue')"></div>
+    </div>
+    <button onclick="startPlay()">Play</button>
+
+    <script src="correcion.js"></script>
+</body>
+
+</html>

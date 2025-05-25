@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div.first {
+    background-color: #ef2e9ee8;
+    padding: 10mm;
+    width: 15mm;
+    height: 11mm;
+    position: absolute;
+    margin-left: 10mm;
+    margin-top: 28mm;
+}
+
+div.second {
+    background-color: #34a2d1e3;
+    padding: 10mm;
+    width: 15mm;
+    height: 11mm;
+    position: absolute;
+    margin: 33mm;
+}
+
+div.third {
+    background-color: #3a8c1a;
+    padding: 10mm;
+    width: 15mm;
+    height: 11mm;
+    position: absolute;
+    margin-left: 18mm;
+    margin-top: 55mm;
+    z-index: -1;
+}

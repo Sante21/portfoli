@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llista de colors</title>
+    <style>
+        .inline {
+            display: inline-block;
+        }
+
+        .select {
+            background-color: lightyellow;
+        }
+
+        .select tr td {
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            background-color: gray;
+        }
+
+        .pink {
+            background-color: pink !important;
+        }
+
+        .purple {
+            background-color: purple !important;
+        }
+
+        .yellow {
+            background-color: yellow !important;
+        }
+
+        .aquamarine {
+            background-color: aquamarine !important;
+        }
+
+        .red {
+            background-color: red !important;
+        }
+
+        .orange {
+            background-color: orange !important;
+        }
+
+        .blue {
+            background-color: blue !important;
+        }
+
+        .fuchsia {
+            background-color: fuchsia !important;
+        }
+    </style>
+</head>
+
+<body>
+    <article id="ex5">
+        <header>
+            <h2>Llista de colors</h2>
+        </header>
+        <div class="inline">
+            <table class="select">
+                <tr>
+                    <td class="pink" onclick="selectColor('pink')"></td>
+                    <td class="purple" onclick="selectColor('purple')"></td>
+                    <td class="yellow" onclick="selectColor('yellow')"></td>
+                    <td class="aquamarine" onclick="selectColor('aquamarine')"></td>
+                    <td class="red" onclick="selectColor('red')"></td>
+                    <td class="orange" onclick="selectColor('orange')"></td>
+                    <td class="blue" onclick="selectColor('blue')"></td>
+                    <td class="fuchsia" onclick="selectColor('fuchsia')"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="inline"> --><br>--></div>
+        <div class="inline">
+            <table class="select">
+                <tr>
+                    <td id="llista-1"></td>
+                    <td id="llista-2"></td>
+                    <td id="llista-3"></td>
+                    <td id="llista-4"></td>
+                    <td id="llista-5"></td>
+                    <td id="llista-6"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="inline"> --><button>Pop</button><br>--></div>
+        <script src="script.js"></script>
+    </article>
+</body>
+
+</html>

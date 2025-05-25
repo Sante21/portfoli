@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 20mm;
+    height: 28mm;
+}
+
+img.D10 {
+    z-index: 1;
+    margin: 1mm;
+    border: 3px solid black;
+    position: absolute;
+}
+
+img.D11 {
+    z-index: 2;
+    border: 3px solid black;
+    position: absolute;
+    margin: 8mm;
+}
+
+img.D12 {
+    z-index: 3;
+    border: 3px solid black;
+    position: absolute;
+    margin: 17mm;
+}
+
+img.D13 {
+    z-index: 4;
+    border: 3px solid black;
+    position: absolute;
+    margin: 25mm;
+}
+
+img.D1 {
+    z-index: 5;
+    border: 3px solid black;
+    position: absolute;
+    margin: 33mm;
+}

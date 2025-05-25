@@ -1,0 +1,24 @@
+
+div.transformRed {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: width 2s;
+}
+
+.transformRed:hover {
+    width: 300px;
+}
+
+div.transformBlue {
+    margin-top: 5mm;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transition: width 2s;
+    transition-delay: 2s;
+}
+
+.transformRed:hover +.transformBlue {
+    width: 300px;
+}

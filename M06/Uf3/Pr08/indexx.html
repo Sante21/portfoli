@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Get access to everything.</h1>
+        <p>Sign up for a free account for exclusive access to our site.</p>
+        <form>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <ul class="password-requirements">
+                <li id="length">
+                    <i class="fa-solid fa-circle-xmark"></i> Password must be over 8 characters
+                </li>
+                <li id="number">
+                    <i class="fa-solid fa-circle-xmark"></i> Password must contain 1 number
+                </li>
+                <li id="special">
+                    <i class="fa-solid fa-circle-xmark"></i> Password must contain 1 special character
+                </li>
+                <li id="uppercase">
+                    <i class="fa-solid fa-circle-xmark"></i> Password must contain 1 upper case and 1 lower case letter
+                </li>
+            </ul>
+
+            <button type="submit" id="signup-btn">Sign up</button>
+            <button type="button" id="google-btn">Continue with Google</button>
+        </form>
+    </div>
+</body>
+
+</html>

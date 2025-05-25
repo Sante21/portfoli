@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.base {
+    width: 200mm;
+    height: 85mm;
+    background-color: #44B6B6;
+    border: 1px solid black;
+    border-radius: 15mm;
+    margin: 20mm;
+    position: absolute;
+}
+
+div.pantalla {
+    width: 140mm;
+    height: 75mm;
+    background-color: #3DA6AA;
+    border: 0.3mm solid gray;
+    border-radius: 2mm;
+    position: absolute;
+    left: 30mm;
+    top: 5mm;
+    box-shadow: gray 0mm 0mm 2mm 0mm inset;
+}
+
+div.pantalladent {
+    width: 129mm;
+    height: 65mm;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 0mm;
+    position: absolute;
+    top: 5mm;
+    left: 5mm;
+    box-shadow: black 0mm 0mm 0mm 1mm inset;
+}
+
+img {
+    width: 127mm;
+    height: 63mm;
+    position: absolute;
+    left: 1mm;
+    top: 1mm;
+    /* border: 0mm solid black; */
+}
+
+div.joystickIzq {
+    width: 15mm;
+    height: 15mm;
+    border: 6px solid #D1D4D4;
+    border-radius: 50%;
+    position: absolute;
+    top: 15mm;
+    left: 3mm;
+    z-index: 1;
+    box-shadow: grey 0mm 0mm 0mm 1mm inset;
+}
+
+div.joystickIzqDntr{
+    width: 14mm;
+    height: 14mm;
+    background-color: #E0E1E1;
+    border-radius: 50%;
+    position: absolute;
+    top: 17mm;
+    left: 5mm;
+    z-index: 0;
+}
+
+div.flechaTop {
+    width: 7.4mm;
+    height: 7mm;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    position: absolute;
+    top: 40mm;
+    left: 11mm;
+    background-color: #D5D5D6;
+    z-index: 1;
+}
+
+div.flechaRight {
+    width: 7mm;
+    height: 7mm;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    top: 47mm;
+    left: 19mm;
+    background-color: #D5D5D6;
+    z-index: 1;
+}
+
+div.flechaButtom {
+    width: 7.4mm;
+    height: 7mm;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    top: 54.5mm;
+    left: 11mm;
+    background-color: #D5D5D6;
+    z-index: 1;
+}
+
+div.flechaLeft {
+    width: 7mm;
+    height: 7mm;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    top: 47mm;
+    left: 4mm;
+    background-color: #D5D5D6;
+    z-index: 1;
+}
+
+div.flechaMiddle {
+    width: 8mm;
+    height: 7mm;
+    position: absolute;
+    top: 47.5mm;
+    left: 11mm;
+    background-color: #D5D5D6;
+    z-index: 3;
+}

@@ -1,0 +1,4 @@
+
+parentNode
+insertBefore
+currentTarget

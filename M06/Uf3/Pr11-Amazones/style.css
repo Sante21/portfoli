@@ -1,0 +1,67 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.board div {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    width: 300px;
+}
+
+.board div:nth-child(odd) div:nth-child(odd) {
+    background-color: #f3f5dd;
+}
+
+.board div:nth-child(odd) div:nth-child(even) {
+    background-color: #ae302e;
+}
+
+.board div:nth-child(even) div:nth-child(even) {
+    background-color: #f3f5dd;
+}
+
+.board div:nth-child(even) div:nth-child(odd) {
+    background-color: #ae302e;
+}
+
+.board div div {
+    height: 30px;
+    width: 30px;
+}
+
+.whiteQueen {
+    background-image: url('/Pr11-Amazones/LightQueen.png');
+    background-size: cover;
+}
+
+.blackQueen {
+    background-image: url('/Pr11-Amazones/DarkQueen.png');
+    background-size: cover;
+}
+
+.board div div.toSelect {
+    border: 2px solid green;
+    height: 26px;
+    width: 26px;
+}
+
+.board div div.toMove {
+    border: 2px solid lightskyblue;
+    height: 26px;
+    width: 26px;
+}
+
+.board div div.toShoot {
+    border: 2px solid greenyellow;
+    height: 26px;
+    width: 26px;
+}
+
+body div.board div div.arrow {
+    background-color: black !important;
+}

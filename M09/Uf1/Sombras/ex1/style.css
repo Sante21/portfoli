@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.div1 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    box-shadow: red 2mm 2mm;
+}
+
+div.div2 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    left: 60mm;
+    box-shadow: red 2mm 2mm 3mm;
+}
+
+div.div3 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    left: 120mm;
+    box-shadow: red 0mm 0mm 0mm 1.5mm;
+}
+
+div.div4 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    top: 45mm;
+    box-shadow: red 0mm 0mm 2mm 0.5mm inset;
+}
+
+div.div5 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    top: 45mm;
+    left: 60mm;
+    box-shadow: red 0mm 0mm 10mm 0.5mm inset;
+}
+
+div.div6 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    top: 45mm;
+    left: 120mm;
+    box-shadow: rgba(255, 0, 0, 0.541) -1.5mm 1.5mm, #f596a79d -3mm 3mm, #f9d5ee96 -4.5mm 4.5mm;
+}
+
+div.div7 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    top: 90mm;
+    box-shadow: white 3mm -3mm, red 3mm -3mm 0mm 3px;
+}
+
+div.div8 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    top: 90mm;
+    left: 60mm;
+    box-shadow: #0F2DFF 0mm 0mm 0mm 1mm, #357F00 0mm 0mm 0mm 2mm, #FFFC03 0mm 0mm 0mm 3mm, #F8A502 0mm 0mm 0mm 4mm, #F10904 0mm 0mm 0mm 5mm;
+}
+
+div.div9 {
+    position: absolute;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 3mm;
+    border: 1px solid black;
+    margin: 20mm;
+    top: 90mm;
+    left: 120mm;
+    box-shadow: #0F2DFF 0mm 0mm 0mm 1mm inset , white -2mm 2mm 0mm, #53C01A -2mm 2mm 0mm 1mm, white -5mm 5mm 0mm, #FED914 -5mm 5mm 0mm 1mm, white -8mm 8mm 0mm, #F79C55 -8mm 8mm 0mm 1mm, white -11mm 11mm 0mm, #F25656 -11mm 11mm 0mm 1mm;
+}

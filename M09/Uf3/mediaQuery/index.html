@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="item1">
+        <h1>Hello World :)</h1>
+    </div>
+    <div class="item2">
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+    </div>
+    <div class="item3">Al the Content</div>
+    <div class="item4">See the new's</div>
+    <div class="item5">Contact with us</div>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            gap: 1mm;
+            grid-template-columns: 6;
+            grid-template-areas:
+                "header header header header header header"
+                "menu main main main main aside"
+                "footer footer footer footer footer footer";
+        }
+
+        .item1 {
+            grid-area: header;
+            border: 2px solid red;
+        }
+
+        .item2 {
+            grid-area: menu;
+            border: 2px solid violet;
+        }
+
+        .item3 {
+            grid-area: main;
+            border: 2px solid yellow;
+        }
+
+        .item4 {
+            grid-area: aside;
+            border: 2px solid green;
+        }
+
+        .item5 {
+            grid-area: footer;
+            border: 2px solid blue;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                display: grid;
+                gap: 2mm;
+                grid-template-areas:
+                    "header"
+                    "menu"
+                    "main"
+                    "aside"
+                    "footer";
+            }
+        }
+        @media (prefers-colors-dark){
+            
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+
+:root{
+    --color1: #0095cd;
+    --color2: #76c4ba;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background: url("img/background.png") no-repeat top right, linear-gradient(90deg, var(--color1), var(--color2));
+    /* height: 100%; */
+}
+
+main {
+    margin: 5mm 0 0 15mm;
+    width: 60%;
+}
+
+label {
+    width: calc(24% - 3mm);
+    margin: 3mm;
+}
+
+input {
+    color: black;
+    width: calc(36% - 3mm);
+    margin-right: 3mm;
+    margin-bottom: 3mm;
+    height: 6mm;
+    border-radius: 0.5mm;
+}
+
+label[for="quantity"] {
+    width: calc(22% - 3mm);
+}
+
+#quantity {
+    width: calc(20% - 3mm);
+}
+
+#adress {
+    vertical-align: middle;
+    width: calc(73% - 3mm);
+}
+
+input[type="checkbox"] {
+    width: 10mm;
+}
+
+img {
+    width: 24mm;
+    vertical-align: top;
+}
+
+#cake3 {
+    margin-left: 47mm;
+}

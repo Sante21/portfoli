@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pushPop {
+    display: flex;
+    gap: 3mm;
+    flex-direction: column;
+
+    button {
+        width: 40mm;
+        height: 15mm;
+        border-radius: 2mm;
+    }
+}
+
+.queue {
+    display: flex;
+    gap: 3mm;
+    flex-direction: column;
+
+    button {
+        width: 40mm;
+        height: 15mm;
+        border-radius: 2mm;
+    }
+}
+
+p,
+button {
+    font-size: 1.1rem;
+}

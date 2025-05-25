@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <h1>Get access to everything.</h1>
+        <p>Sign up for a free account for exclusive access to our site.</p>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" id="txt-pass" placeholder="Password" required>
+        <div>
+            <ul class="password-requirements">
+                <li id="have8chars">Password must be over 8 characters</li>
+                <li id="oneNumber">Password must contain 1 number</li>
+                <li id="specialChar">Password must contain 1 special character</li>
+                <li id="onLower">Password must contain 1 upper case and 1 lower case letter</li>
+            </ul>
+        </div>
+        <button type="submit" class="sign-up-btn">Sign up</button>
+    </form>
+    <script>
+
+        document.getElementById('txt-pass').addEventListener('keyup', presKey);
+
+        function presKey(e) {
+            let txt = document.getElementById('txt-pass').value;
+            if (moreThan8) {
+                document.getElementById('have8chars').className = 'valid';
+            } else {
+                document.getElementById('have8chars').className = '';
+            }
+            document.getElementById('oneNumber').className = haveANumber(txt) ? 'valid' : '';
+            document.getElementById('isSpecial').className = isSpecial(txt) ? 'valid' : '';
+            document.getElementById('haveUpper').className = haveUpper(txt) ? 'valid' : '';
+        }
+
+        function moreThan8(txt) {
+            if (count(txt) > 8) {
+                return true
+            }
+            return false
+        }
+
+        function haveANumber(txt) {
+            for (let i = 0; i < count(txt); i++) {
+                if (!isNaN(parseInt(txt.charAt(i)))) {
+                    return true
+                }
+            }
+            return false;
+        }
+
+        function isSpecial(txt) {
+            let caracter_especial = ['!', '"', "·", "@", "#", '%', '&'];
+            for (let i = 0; i < count(txt); i++) {
+                for (let j = 0; j < (caracter_especial.length); j++) {
+                    if (caracter_especial[j] === txt.charAt(i)) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+
+        function haveUpper(txt) {
+            for (let i = 0; i < count(txt); i++) {
+                if (txt.toUpperCase() === txt.charAt(i)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite</title>
+</head>
+
+<body>
+    <canvas id="ex1-car" height="300" width="300"></canvas>
+    <canvas id="ex2-moon" height="300" width="300"></canvas>
+    <canvas id="ex3-wave" height="300" width="300"></canvas>
+
+    <div style="display: inline-block;">
+        <canvas id="ex4-stickers" height="300" width="300"></canvas>
+        <div class="stickers-container" style="display: inline-block;">
+            <div class="sticker1" style="border-color: red ;"></div>
+            <div class="sticker2"></div>
+            <div class="sticker3"></div>
+            <div class="sticker4"></div>
+        </div>
+    </div>
+    <style>
+        canvas {
+            border: 1px solid black;
+            image-rendering: none;
+        }
+
+        .stickers-container div {
+            width: 74px;
+            height: 74px;
+            background-size: 550%;
+            background-image: url('stickers.png');
+            object-fit: cover;
+            border: 1px solid black
+        }
+
+        .sticker1 {
+            background-position: -8px -10px;
+        }
+
+        .sticker2 {
+            background-position: -155px -10px;
+        }
+
+        .sticker3 {
+            background-position: -233px -65px;
+        }
+
+        .sticker4 {
+            background-position: -9px -80px;
+        }
+    </style>
+
+    <script>
+        // #region Exercici 1 Cotxe
+        let canvas1 = document.getElementById('ex1-car');
+        let ctx1 = canvas1.getContext('2d');
+
+        // Rectangle principal
+        ctx1.beginPath();
+        ctx1.fillStyle = 'rgb(31, 146, 214)';
+        ctx1.fillRect(50, 120, 200, 50);
+        ctx1.stroke();
+
+        // Part d'adalt
+        ctx1.beginPath();
+        ctx1.fillStyle = 'rgb(13, 124, 183)';
+        ctx1.moveTo(80, 125);
+        ctx1.lineTo(105, 75);
+        ctx1.lineTo(195, 75);
+        ctx1.lineTo(220, 125);
+        ctx1.closePath();
+        ctx1.fill();
+
+        // Finestres
+        // Esquerra
+        ctx1.beginPath();
+        ctx1.fillStyle = 'rgb(184, 227, 251)';
+        ctx1.moveTo(90, 120);
+        ctx1.lineTo(110, 80);
+        ctx1.lineTo(150, 80);
+        ctx1.lineTo(150, 120);
+        ctx1.closePath();
+        ctx1.fill();
+
+        // Dreta
+        ctx1.beginPath();
+        ctx1.beginPath();
+        ctx1.fillStyle = 'rgb(184, 227, 251)';
+        ctx1.moveTo(160, 120);
+        ctx1.lineTo(160, 80);
+        ctx1.lineTo(190, 80);
+        ctx1.lineTo(210, 120);
+        ctx1.closePath();
+        ctx1.fill();
+
+        // Rodes
+        ctx1.fillStyle = 'rgb(44, 55, 74)';
+        ctx1.beginPath();
+        ctx1.moveTo(110, 170);
+        ctx1.arc(90, 170, 20, 0, 2 * Math.PI);
+        ctx1.fill();
+
+        ctx1.fillStyle = 'rgb(44, 55, 74)';
+        ctx1.beginPath();
+        ctx1.moveTo(110, 170);
+        ctx1.arc(210, 170, 20, 0, 2 * Math.PI);
+        ctx1.fill();
+
+        ctx1.fillStyle = 'rgb(31, 146, 214)';
+        ctx1.beginPath();
+        ctx1.moveTo(110, 170);
+        ctx1.arc(90, 170, 10, 0, 2 * Math.PI);
+        ctx1.fill();
+
+        ctx1.beginPath();
+        ctx1.moveTo(110, 170);
+        ctx1.arc(210, 170, 10, 0, 2 * Math.PI);
+        ctx1.fill();
+
+
+        // #endregion
+
+        // #region Exercici 2 Bafarada
+        let canvas2 = document.getElementById('ex2-moon');
+        let ctx2 = canvas2.getContext('2d');
+
+        ctx2.fillStyle = 'rgb(183, 228, 250)';
+        ctx2.strokeStyle = 'rgb(90, 145, 181)';
+        ctx2.lineWidth = 3
+
+        ctx2.beginPath();
+        ctx2.moveTo(70, 195);
+        ctx2.quadraticCurveTo(100, 185, 100, 152);
+        ctx2.quadraticCurveTo(60, 165, 60, 95);
+        ctx2.quadraticCurveTo(55, 15, 150, 20);
+        ctx2.quadraticCurveTo(235, 20, 219, 120);
+        ctx2.quadraticCurveTo(215, 160, 135, 160);
+        ctx2.quadraticCurveTo(115, 199, 70, 195);
+        ctx2.fill();
+        ctx2.stroke();
+
+        // #endregion
+
+        // #region Exercici 3 Ones del Mar
+        let canvas3 = document.getElementById('ex3-wave');
+        let ctx3 = canvas3.getContext('2d');
+
+        ctx3.strokeStyle = 'rgb(135, 204, 236)';
+        ctx3.fillStyle = 'rgb(170, 226, 248)';
+        ctx3.lineWidth = 3;
+
+        ctx3.beginPath();
+        ctx3.moveTo(0, 150);
+        // ctx3.bezierCurveTo(65, 80, 140, 215, 300, 130);
+
+        ctx3.bezierCurveTo(65, 80, 140, 220, 200, 115);
+        ctx3.bezierCurveTo(220, 85, 280, 100, 300, 130);
+        ctx3.lineTo(canvas3.width, canvas3.height);
+        ctx3.lineTo(0, canvas3.height);
+        ctx3.fill();
+        ctx3.stroke();
+
+
+        ctx3.strokeStyle = 'rgb(33, 95, 165)';
+        ctx3.fillStyle = 'rgb(0, 130, 190)';
+        ctx3.lineWidth = 3;
+
+        ctx3.beginPath();
+        ctx3.moveTo(0, 200);
+        // ctx3.bezierCurveTo(65, 130, 140, 265, 300, 180);
+        ctx3.bezierCurveTo(65, 130, 140, 265, 230, 180);
+        ctx3.bezierCurveTo(250, 165, 260, 150, 300, 180);
+        ctx3.lineTo(canvas3.width, canvas3.height);
+        ctx3.lineTo(0, canvas3.height);
+        ctx3.fill();
+        ctx3.stroke();
+        // #endregion
+
+        // #region Exercici 4 Stickers
+        let canvas4 = document.getElementById('ex4-stickers');
+        let ctx4 = canvas4.getContext('2d');
+
+        let img = new Image();
+        img.src = 'stickers.png';
+        
+
+        class Logo {
+            constructor(PosX, PosY, width, height) {
+                this.PosX = PosX;
+                this.PosY = PosY;
+                this.width = width;
+                this.height = height;
+            }
+        }
+
+        let angular = new Logo(14, 15, 80, 85);
+        let cPlus = new Logo(190, 11, 96, 98);
+        let docker = new Logo(283, 82, 88, 90);
+        let javaScript = new Logo(14, 98, 88, 88);
+
+        let actual = angular;
+
+        // img.onload = () => {
+        function printLogo(x, y) {
+            ctx4.drawImage(img, actual.PosX, actual.PosY, actual.width, actual.height, x - (actual.width / 2), y - (actual.height / 2), actual.width, actual.height);
+            ctx4.stroke()
+            console.log(actual);
+            // }
+        }
+
+        //selecció de l'sticker
+        let currentsticker = 'sticker1';
+        document.querySelector('.stickers-container').addEventListener('click', (e) => {
+            document.querySelector('.' + currentsticker).style = '';
+            currentsticker = e.target.className;
+            e.target.style = 'border-color: red;';
+            // actual = currentsticker;
+            console.log(currentsticker);
+            if (currentsticker == 'sticker1') {
+                actual = angular
+            }
+            else if (currentsticker == 'sticker2') {
+                actual = cPlus
+            }
+            else if (currentsticker == 'sticker3') {
+                actual = docker
+            }
+            else if (currentsticker == 'sticker4') {
+                actual = javaScript
+            }
+        });
+
+        canvas4.addEventListener('click', (e) => {
+            printLogo(e.offsetX, e.offsetY);
+        })
+        // #endregion
+    </script>
+</body>
+
+</html>

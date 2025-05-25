@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagrama</title>
+
+    <script>
+        document.write(comprobarAnagrama("asco", "asco"));
+
+        function comprobarAnagrama(palabra1, palabra2) {
+            if (palabra1 == palabra2) {
+                return false;
+            }
+
+            if (palabra1.length == palabra2.length) {
+                for (let i = 0; i < palabra1.length; i++) {
+                    let foundLetter = false;
+                    for (let j = 0; j < palabra2.length; j++) {
+                        if (palabra1[i] == palabra2[j]) {
+                            foundLetter = true;
+                        }
+                    }
+                    if (!foundLetter) {
+                        return false;
+                    } else {
+                        return true;
+                    }
+                }
+            } else {
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+</body>
+</html>

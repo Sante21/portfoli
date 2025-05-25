@@ -1,0 +1,146 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.cPadre {
+    display: grid;
+    grid-template-columns: 25mm 25mm 25mm;
+    margin-top: 5mm;
+    gap: 1mm;
+}
+
+div > div {
+    background-color: #6A7C88;
+    color: white;
+    padding: 3mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.c1 {
+    display: grid;
+    grid-column: 1 / 4;
+}
+
+div.c2 {
+    display: grid;
+    grid-row: span 2;
+}
+
+
+div.cPadre1 {
+    margin-top: 5mm;
+    gap: 0.3mm;
+    display: grid;
+    grid-template-columns: 25mm 25mm 25mm;
+    grid-template-areas: 
+      "1celda 1celda 1celda"
+      "2celda 3celda 4celda"
+      "2celda 5celda 6celda";
+}
+
+.c12 {
+    grid-area: 1celda;
+}
+.c21 {
+    grid-area: 2celda;
+}
+.c32 {
+    grid-area: 3celda;
+}
+.c42 {
+    grid-area: 4celda;
+}
+.c52 {
+    grid-area: 5celda;
+}
+.c62 {
+    grid-area: 6celda;
+}
+
+
+div.cPadre2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    margin-top: 5mm;
+    gap: 0.3mm;
+}
+
+.c11 {
+    /* grid-column: 1 / 3; */
+    grid-column: span 2;
+}
+
+.c44 {
+    /* grid-column: 2 / 4; */
+    grid-column: span 2;
+}
+
+.c55 {
+    /* grid-column: 1 / 4; */
+    grid-column: span 3;
+}
+
+
+main {
+    width: 107mm;
+    margin-top: 12mm;
+    background-color: black;
+    gap: 2mm;
+    border: 4mm solid black;
+    display: grid;
+    grid-template-columns: 20mm 20mm 20mm 20mm 20mm;
+    grid-template-rows: 7mm 45mm 7mm;
+    grid-template-areas: 
+      "celda1 celda2 celda3 celda3 celda3"
+      "celda4 celda2 celda5 celda5 celda5"
+      "celda4 celda2 celda6 celda7 celda8";
+}
+
+main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celda1 {
+    background-color: #B93E37;
+    grid-area: celda1;
+}
+.celda2 {
+    background-color: #B93E37;
+    grid-area: celda2;
+}
+.celda3 {
+    background-color: #2952BA;
+    grid-area: celda3;
+}
+.celda4 {
+    background-color: #D1AC38;
+    grid-area: celda4;
+}
+.celda5 {
+    background-color: #FFFFFF;
+    grid-area: celda5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.celda6 {
+    background-color: #FFFFFF;
+    grid-area: celda6;
+}
+.celda7 {
+    background-color: #2952BA;
+    grid-area: celda7;
+}
+.celda8 {
+    background-color: #D1AC38;
+    grid-area: celda8;
+}
+
+p {
+    font-size: 2mm;
+}

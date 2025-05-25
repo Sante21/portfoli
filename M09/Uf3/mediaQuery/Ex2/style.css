@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    gap: 2mm;
+    /* padding: 10mm; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-areas:
+        "banner banner banner"
+        "img1 img2 img3"
+        "txt1 txt2 txt3"
+    ; */
+}
+
+.item1 {
+    background-color: #06446a;
+    width: 100vw;
+    height: 10mm;
+}
+
+.item2 {
+    grid-area: banner;
+    background-color: #2a83b1;
+    height: 60mm;
+    /* border: 2px solid; */
+}
+
+.item3 {
+    grid-area: img1;
+    background-color: #17598d;
+    height: 40mm;
+    /* border: 2px solid; */
+}
+
+.item4 {
+    grid-area: img2;
+    height: 40mm;
+    background-color: #17598d;
+    /* border: 2px solid; */
+
+}
+
+.item5 {
+    grid-area: img3;
+    height: 40mm;
+    background-color: #17598d;
+    /* border: 2px solid; */
+
+}
+
+.item6 {
+    grid-area: txt1;
+    /* color: #06446a; */
+    font-weight: bold;
+    /* border: 2px solid; */
+}
+
+.item7 {
+    grid-area: txt2;
+    /* color: #06446a; */
+    font-weight: bold;
+    /* border: 2px solid; */
+}
+
+.item8 {
+    grid-area: txt3;
+    /* color: #06446a; */
+    font-weight: bold;
+    /* border: 2px solid; */
+}
+
+/* Movil */
+@media only screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "banner"
+            "txt1"
+            "txt2"
+            "txt3"
+        ;
+    }
+
+    .item3 {
+        display: none;
+    }
+
+    .item4 {
+        display: none;
+    }
+
+    .item5 {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "banner banner"
+        "img1 txt1"
+        "img2 txt2"
+        "img3 txt3"
+        ;
+    }
+}
+
+/* Escritorio */
+@media only screen and (min-width: 768px) {
+    main {
+        padding: 10mm;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "banner banner banner"
+            "img1 img2 img3"
+            "txt1 txt2 txt3"
+        ;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: rgb(245, 245, 245);
+        color: #06446a;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        background-color: rgb(10, 10, 10);
+        color: rgb(225, 225, 225);
+    }
+}

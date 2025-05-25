@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.divRojo {
+    width: 50mm;
+    height: 50mm;
+    background-color: #F14141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 6s;
+}
+
+div.divVerde {
+    width: 40mm;
+    height: 40mm;
+    background-color: #40700F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 4s;
+}
+
+div.divAzul {
+    width: 25mm;
+    height: 25mm;
+    background-color: #0F2DFF;
+    transition: 2s;
+}
+
+.divRojo:hover {
+    transform: rotate(180deg);
+}
+
+.divRojo:hover > .divVerde {
+    transform: rotate(180deg);
+}
+
+.divRojo:hover > .divVerde > .divAzul {
+    transform: rotate(180deg);
+}

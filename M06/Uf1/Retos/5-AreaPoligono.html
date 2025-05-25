@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area de un poligono</title>
+
+    <script>
+        /*
+        * Crea una única función (importante que sólo sea una) que sea capaz
+        * de calcular y retornar el área de un polígono.
+        * - La función recibirá por parámetro sólo UN polígono a la vez.
+        * - Los polígonos soportados serán Triángulo, Círculo y Rectángulo.
+        * - Imprime el cálculo del área de un polígono de cada tipo.
+        */
+
+        class Poligono {
+            constructor(nombre) {
+                this.Nombre = nombre;
+            }
+
+            get nombre() {
+                return this.nombre;
+            }
+
+            set nombre(nombreForma) {
+                this.nombre = nombreForma;
+            }
+
+            area() {
+                throw new Error("Polígono no puede dar el area");                
+            }
+        }
+
+        class Triangulo extends Poligono {
+            constructor(base, altura) {
+                super("triangulo");
+                this.base = base;
+                this.altura = altura;
+            }
+            area() {
+                return (this.base * this.altura) /2
+            }
+        }
+
+        class Circulo extends Poligono {
+            constructor(radio) {
+                super("circulo");
+                this.radio = radio;
+            }
+            area() {
+                return Math.PI * this.radio**2;
+            }
+        }
+
+        class Rectangulo extends Poligono {
+            constructor(base, altura) {
+                super("rectangulo");
+                this.base = base;
+                this.altura = altura;
+            }
+            area() {
+                return this.base * this.altura
+            }
+        }
+
+        let poligons = [
+            new Triangulo (2, 5),
+            new Circulo (5),
+            new Rectangulo (5, 7)
+        ]
+
+        for (let i of poligons) {
+            let text = "Nom: " + i.Nombre + " area: " + i.area() + "<br> ";
+            document.write(text);
+        }
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

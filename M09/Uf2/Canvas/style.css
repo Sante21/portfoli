@@ -1,0 +1,20 @@
+canvas {
+    border: solid 2px black;
+}
+
+.container {
+    position: relative;
+}
+
+/* Estilo para la imagen */
+img {
+    width: 350px;
+}
+
+/* Estilo para el canvas */
+#canvas10 {
+    /* border: solid 2px wheat; */
+    position: absolute;
+    top: 20px;
+    left: 37px;
+  }

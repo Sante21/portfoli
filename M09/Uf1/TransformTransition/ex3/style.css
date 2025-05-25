@@ -1,0 +1,31 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.divPadre {
+    background-image: linear-gradient(#848484, #D0D0D0);
+    width: 50mm;
+    height: 50mm;
+    border-radius: 5mm;
+    box-shadow: #848484 4mm 4mm 4mm;
+    display: flex;
+    justify-content: center;
+}
+
+div.skater:hover {
+    transform: translateY(-20mm) scale(1.3);
+}
+
+.skater {
+    transition: 2s;
+    img {
+        height: 50mm;
+        filter: drop-shadow(2mm 2mm 2mm);
+    }
+}

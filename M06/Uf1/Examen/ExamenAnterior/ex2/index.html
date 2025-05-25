@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .opcion {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+
+        .opcion img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Elige tu opción</h1>
+
+    <form>
+        <div class="opcion">
+            <input type="radio" name="opcion" id="piedra" value="piedra">
+            <label for="piedra">
+                👊
+            </label>
+        </div>
+        <div class="opcion">
+            <input type="radio" name="opcion" id="papel" value="papel">
+            <label for="papel">
+                ✋
+            </label>
+        </div>
+        <div class="opcion">
+            <input type="radio" name="opcion" id="tijera" value="tijera">
+            <label for="tijera">
+                ✌️
+            </label>
+        </div>
+
+        <button type="button">Jugar</button>
+    </form> -->
+
+    <article id="ex2">
+        <header>
+            <h2>Pedra paper tisores &#9994; &#9995; &#9996; (1 punts)</h2>
+        </header>
+        <div class="resultatPedra" id="resultatUsuari"></div>
+        <div class="resultatPedra" id="resultatPc"></div>
+        <div class="resultatPedra" style="font-size:2em;">
+            <input type="radio" id="pedra" name="joc" value="Pedra">
+            <label for="pedra">&#9994;</label><br>
+            <input type="radio" id="paper" name="joc" value="Paper">
+            <label for="paper">&#9995;</label><br>
+            <input type="radio" id="tisores" name="joc" value="Tisores">
+            <label for="tisores">&#9996;</label><br>
+            <button onclick="jugarEx2();">Jugar</button>
+        </div>
+    </article>
+</body>
+
+</html>

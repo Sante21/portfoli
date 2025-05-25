@@ -1,0 +1,34 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ejercicio 7</title>
+</head>
+
+<body>
+    <textarea id="texto"></textarea>
+    <p id="info" data-limit="100">Te quedan 100 caracteres</p>
+
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("texto").addEventListener("input", limita);
+        });
+
+        function limita(e) {
+            let maximoCaracteres = parseInt(e.target.getAttribute('data-limit')) || 100;
+            let elemento = document.getElementById("texto");
+
+            if (e.key != 'Backspace' && elemento.value.length >= maximoCaracteres) {
+                e.preventDefault();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

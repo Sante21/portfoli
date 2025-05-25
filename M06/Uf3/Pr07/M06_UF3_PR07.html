@@ -1,0 +1,37 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ejercicio 7</title>
+</head>
+
+<body>
+    <h1>Contador de Caràcters</h1>
+
+    <textarea id="texto"></textarea>
+    <p id="info">Te quedan 100 caracteres</p>
+
+
+    <script type="text/javascript">
+        let elemento = document.getElementById("texto");
+        let info = document.getElementById("info");
+
+        elemento.addEventListener("keydown", function () {
+            limita(100);
+        });
+
+        function limita(maximoCaracteres) {
+            let result = maximoCaracteres - elemento.value.length;
+            info.innerHTML = `Te quedan ${result} caracteres`;
+            
+            if (elemento.value.length >= maximoCaracteres) {
+                elemento.value = elemento.value.substring(0, maximoCaracteres);
+                info.innerHTML = "Ya no te quedan caracteres.";
+            }
+        }
+    </script>
+</body>
+
+</html>

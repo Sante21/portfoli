@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen M06 UF3 24-25</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js"></script>
+    <title>Examen Iker</title>
+</head>
+
+<body>
+    <div class="contingut">
+
+
+        <header class="banner">
+            <h1>Examen M06 UF3 23-24</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#acl">Aclaracions</a></li>
+                <li><a href="#ex1">Exercici 1</a></li>
+                <li><a href="#ex2">Exercici 2</a></li>
+                <li><a href="#ex3">Exercici 3</a></li>
+                <li><a href="#ex4">Exercici 4</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <article id="acl">
+                <p>
+                </p>
+                <header>
+                    <h2>Aclaracions i apunts</h2>
+                </header>
+                <h2>Aclaracions</h2>
+                <p>
+                    L'accés a internet està prohibit, abans de començar s'ha de tenir el cable de xarxa desconnectat o
+                    el
+                    wifi desactivat.
+                </p>
+                <p>
+                    Totes les funcions que demana crear en els diferents exercicis s'han de crear amb el nom exacte i
+                    acceptar el paràmetres que demana l'exercici.
+                </p>
+                <p>
+                    Només es pot fer servir el visual studio i un navegador, al navegador evitar tenir més d'una
+                    pestanya oberta.
+                </p>
+                <p>
+                    Al visual studio només es pot tenir obert la carpeta de l'examen, no es pot mirar activitats
+                    anteriors ni tenir apunts oberts.
+                </p>
+                <h2>Apunts</h2>
+                <p>
+                    Condicionals
+                <pre>
+                    <code>
+    //simple condition
+    if (hour < 18) {
+        greeting = "Good day";
+    } 
+    // else statement
+    if (hour < 18) {
+        greeting = "Good day";
+        } else {
+        greeting = "Good evening";
+        }
+    // elseif statement
+    if (time < 10) {
+        greeting = "Good morning";
+        } else if (time < 20) {
+        greeting = "Good day";
+        } else {
+        greeting = "Good evening";
+        }
+                    </code>
+                </pre>
+                </p>
+                <p>
+                    Bucles
+                <pre>
+                    <code>
+    //for statement
+    for (let step = 0; step < 5; step++) {
+        // Se ejecuta 5 veces, con valores del paso 0 al 4.
+        console.log('Camina un paso hacia el este');
+        }
+    //while statement
+    let n = 0;
+    let x = 0;
+    while (n < 3) {
+        n++;
+        x += n;
+    }
+    //for in
+    for (let i in array) {
+        result += array[i] 
+    }
+    //for of
+    for (let i in array) {
+        result += i 
+    }
+                    </code>
+                </pre>
+                </p>
+                <p>Accés al DOM</p>
+                <p> Obtenir un element:
+                <pre>
+        <code>
+let element = document.getElementById('para');   
+        </code>
+Modificar el seu contingut:
+        <code>
+let element = document.getElementById('para');
+element.innerHTML = "I have changed!";
+        </code>
+Modificar la seva classe:
+        <code>
+let element = document.getElementById('para');
+element.className = "cssClass";
+        </code>
+    </pre>
+                </p>
+                <p>
+                    Obtenir un valor random
+                    <code>
+            // Returns a random integer from 0 to 9:<br>
+            Math.floor(Math.random() * 10);
+        </code>
+
+                </p>
+                <p>Recorre el DOM</p>
+                <code>
+        for(let j; j < element.children.length; j++){
+            console.log(element.children[j])
+        }    
+    </code>
+                <code>
+        let parent = element.parent
+    </code>
+                <p>Llegir i modificar classes d'elements</p>
+                <code>
+        if(div.classList.contains("oneclass")) {
+
+        }
+        div.classList.remove("foo");
+        div.classList.add("anotherclass");
+        div.classList.toggle("visible")
+    </code>
+                <p>Events</p>
+                <p>
+                    Per afegir un event a un element HTML:
+                    <code>
+        <pre>
+let element = document.getElementById('element')
+//opció 1
+element.onclick = foo
+//opció 2
+element.addEventListener('click', foo)
+        </pre>
+    </code>
+                    Els events que podem fer servir són:
+                <ul>
+                    <li>click</li>
+                    <li>mousedown</li>
+                    <li>mouseup</li>
+                    <li>keypress</li>
+                    <li>keyup</li>
+                    <li>keydown</li>
+                </ul>
+                </p>
+                <p>Drag and drop</p>
+                <p>Drag an drop és un event especial que ens permet capturar els events
+                    que succceixen durant l'arrosegament d'un element.
+                    els events que succeixen són:
+                <ul>
+                    <li>dragstart</li>
+                    <li>dragover</li>
+                    <li>dragenter</li>
+                    <li>dragleave</li>
+                    <li>dragend</li>
+                    <li>drop</li>
+                </ul>
+                Entre els event dragstart i drop es pot compartir informació fent servir
+                el metode setData i getData.
+                <code>
+        <pre>
+function dragstart(e){
+    e.setData('key','value')
+}
+funcion drop(e){
+    let value = e.get data('key', 'value')
+}
+        </pre>
+    </code>
+                Per poder permetre l'acció de drop hem de fer <code>e.preventDefault()</code>
+                durant el dragover.
+
+                </p>
+
+                </pre>
+                </p>
+                <p>
+                    Establir un delay:
+                    <code>
+                setTimeout(() => {
+                    console.log("Delayed for 1 second.");
+                  }, 1000)                  
+            </code>
+                </p>
+            </article>
+            <article id="ex1">
+                <header>
+                    <h2>Validació Nom i cognoms(2,5 punts)</h2>
+                    Verifica que el camp nom i cognoms:
+                    <ol>
+                        <li>(1p) Ha de contenir com a mínim 2 paraules</li>
+                        <li>(0.5p) Només no pot contenir números</li>
+                        <li>(0.5p) No pot contenir cap dels següents símbols especials
+                            ('!','"','·','$','%','&','/','(',')','=','?','¿','*','_','-').</li>
+                        <li>(0.25p) Cada paraula comença amb majúscula i la resta en minsúcules.</li>
+                    </ol>
+                    <p>
+                        Marca com amb la classe <code>valid</code> les validacions que compleixen de la llista.
+                        Aquesta validació ha de ser dinàmica, es a dir mentre l'usuari escriu el nom i s'han d'anar
+                        marcant els elements de la llista al moment.
+                    </p>
+                    <p>
+                        (0.25p) Si tot és correcte habilita el botó amb l'id <code>send</code> si es modifica amb dades
+                        no valides torna a deshabilitar-ho.
+                    </p>
+                    <strong>No es pot fer servir expressions regulars per validar el contingut. Els mètodes de natius de
+                        javascript si estan permesos.</strong>
+
+                    <style>
+                        .validate-name {
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+
+                            form {
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                            width: 400px;
+                            border-radius: 10px;
+                            padding: 15px;
+                        }
+
+                        .validate-name .btn {
+                            border-radius: 25px;
+                            margin: 5px;
+                            padding: 8px;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            border: none;
+                            padding: 10px;
+                            color: white;
+                            background-color: #481ebe;
+
+                        }
+
+                        .validate-name .btn:disabled {
+                            background-color: #d3d3d3;
+                        }
+
+                        input {
+                            margin: 5px;
+                            border: none;
+                            border-bottom: 1px solid;
+                            padding: 8px;
+                        }
+
+                        input:focus {
+                            outline: none;
+                            border: none;
+                            border-bottom: 1px solid #2d9de9;
+
+                        }
+
+                        ul.validation li {
+                            list-style-image: url('img/validate/cross.png');
+                        }
+
+                        ul.validation li.valid {
+                            list-style-image: url('img/validate/check.png');
+                        }
+                    </style>
+                    <div class="validate-name">
+                        <form>
+                            <input placeholder="Nom i cognoms" id="input-name" name="name" type="text">
+                            <div>
+                                <ul class="validation">
+                                    <li id="have2words">Mínim 2 paraules.</li>
+                                    <li id="NotNumber">No conté cap numero.</li>
+                                    <li id="NotSpecialChar">No conté cap simbol.</li>
+                                    <li id="isCapitalized">Cada paraula comença amb majuscula.</li>
+                                </ul>
+                            </div>
+                            <input id="send" class="btn" type="submit" value="Send" disabled="disabled">
+                        </form>
+                    </div>
+                </header>
+            </article>
+            <article id="ex2">
+                <header>
+                    <h2>El botó esquiu (2,5 punts)</h2>
+                    <p>
+                        (2.5p) Fes que el botó que es mogui dins de la pantalla, de manera aleatòria, cada cop que
+                        l'usuari posa el ratolí a sobre.
+                        Fes servir l'esdeveniment <code>mouseenter</code> i modifica els estils top i left per tal de
+                        modificar la posició de l'element.
+                        El div en el qual es pot moure és de 500px d'alçada i 500px amplada.
+                    </p>
+                    <style>
+                        .boto-esquiu {
+                            height: 500px;
+                            width: 500px;
+                            background-color: #d3d3d3;
+                        }
+
+                        #boto-esquiu {
+                            position: relative;
+                            height: 30px;
+                            width: 120px;
+                        }
+                    </style>
+                    <div class="boto-esquiu">
+                        <button id="boto-esquiu" style="top: 235px; left: 190px;">Click me!</button>
+                    </div>
+                </header>
+            </article>
+
+
+            <article id="ex3">
+                <header>
+                    <h2>Fusió de Pokémons(2.5p)</h2>
+                </header>
+                <p>
+                    (1.5 punts) Fes que l'usuari pugui arrossegar els diferents pokémons les diferents àrees per
+                    fusionar els pokémons. Quan l'usuari deixi anar un
+                    pokémon sobre l'àrea d'un altre fes que els pokémons es fusionin.
+                </p>
+                <p>
+                    Per fusionar els pokémons s'ha de mirar l'atribut <code>data-src</code> que indica el id del pokemon
+                    original i l'atribut <code>data-dst</code> que indica el pokémon destí. Si volem fusionar els
+                    pokémons 2 i 3 s'ha de
+                    modificar el valor de <code>background-image</code> a l'àrea de destí amb el següent valor
+                    <code>url('img/pokemonfuse/23.png')</code>.
+                </p>
+                <p>
+                    (1 punt) Fes que al posar el pokémon d'origen a sobre del pokémon de destí ja es mostri la fusió al
+                    destí,
+                    però si el mou a un altre lloc que es torni a mostrar el pokémon original.
+                </p>
+
+                <style>
+                    .pokemon-fusion {
+                        width: 650px;
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        align-content: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                    }
+
+                    .pokemon-fusion div {
+                        border-radius: 100%;
+                        height: 100px;
+                        width: 100px;
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .pokemon-fusion div.dst1 {
+                        background-color: #eee9be;
+                        border: 4px solid #f6e652;
+                    }
+
+                    .pokemon-fusion div.dst2 {
+                        background-color: #bde0d6;
+                        border: 4px solid #499e86;
+                    }
+
+                    .pokemon-fusion div.dst3 {
+                        background-color: #fff5cd;
+                        border: 4px solid #c57b08;
+                    }
+
+                    .pokemon-fusion div.dst4 {
+                        background-color: #ffdba9;
+                        border: 4px solid #ff9441;
+                    }
+                </style>
+                <div class="inline">
+                    <div class="pokemon-fusion">
+                        <div class="src" draggable="true" style="background-image: url('img/pokemonfuse/1.png');"
+                            data-src="1"></div>
+                        <div class="src" draggable="true" style="background-image: url('img/pokemonfuse/2.png');"
+                            data-src="2"></div>
+                        <div class="src" draggable="true" style="background-image: url('img/pokemonfuse/3.png');"
+                            data-src="3"></div>
+                        <div class="src" draggable="true" style="background-image: url('img/pokemonfuse/4.png');"
+                            data-src="4"></div>
+                        <div class="dst dst1" data-dst="1"></div>
+                        <div class="dst dst2" data-dst="2"></div>
+                        <div class="dst dst3" data-dst="3"></div>
+                        <div class="dst dst4" data-dst="4"></div>
+                    </div>
+                </div><br>
+
+
+            </article>
+
+            <article id="ex4">
+                <header>
+                    <h2>Pescamines(2.5p)</h2>
+                </header>
+                <p>
+                    Al joc del pescamines s'han de descobrir totes les caselles on no hi ha mines.
+                    Fent clic a cada casella es desobrirà i mostrarà la informació del nombre de mines que hi ha a les
+                    celes del voltant.
+                </p>
+                <p>
+                    (2.5p) Fent servir l'esdeveniment <code>clic</code> descobreix la casella fetn servir la classe
+                    <code>revelat</code> i posa el total de mines que té al seu voltant dins de la cela.
+                </p>
+                <p>
+                    Fes servir la classe revelat per marcar que la cel·la ja ha sigut descoberta.
+                </p>
+
+                <style>
+                    #cerca-mines {
+                        display: grid;
+                        grid-template-columns: repeat(9, 40px);
+                        grid-template-rows: repeat(9, 40px);
+                        gap: 2px;
+                    }
+
+                    #cerca-mines>div {
+                        width: 40px;
+                        height: 40px;
+                        background-color: #f0f0f0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #ccc;
+                        cursor: pointer;
+                    }
+
+                    #cerca-mines>div.revelat.mina {
+                        background-color: red;
+                    }
+
+                    #cerca-mines>div.revelat {
+                        background-color: #d3d3d3;
+                    }
+
+                    .counted {
+                        border: 1px solid orange !important;
+                    }
+                </style>
+
+                <div id="cerca-mines">
+                    <div class="mina" data-row="0" data-col="0"></div>
+                    <div data-row="0" data-col="1"></div>
+                    <div data-row="0" data-col="2"></div>
+                    <div class="mina" data-row="0" data-col="3"></div>
+                    <div data-row="0" data-col="4"></div>
+                    <div data-row="0" data-col="5"></div>
+                    <div class="mina" data-row="0" data-col="6"></div>
+                    <div data-row="0" data-col="7"></div>
+                    <div data-row="0" data-col="8"></div>
+
+                    <div data-row="1" data-col="0"></div>
+                    <div class="mina" data-row="1" data-col="1"></div>
+                    <div data-row="1" data-col="2"></div>
+                    <div data-row="1" data-col="3"></div>
+                    <div class="mina" data-row="1" data-col="4"></div>
+                    <div data-row="1" data-col="5"></div>
+                    <div data-row="1" data-col="6"></div>
+                    <div class="mina" data-row="1" data-col="7"></div>
+                    <div data-row="1" data-col="8"></div>
+
+                    <div data-row="2" data-col="0"></div>
+                    <div data-row="2" data-col="1"></div>
+                    <div class="mina" data-row="2" data-col="2"></div>
+                    <div data-row="2" data-col="3"></div>
+                    <div data-row="2" data-col="4"></div>
+                    <div data-row="2" data-col="5"></div>
+                    <div class="mina" data-row="2" data-col="6"></div>
+                    <div data-row="2" data-col="7"></div>
+                    <div data-row="2" data-col="8"></div>
+
+                    <div data-row="3" data-col="0"></div>
+                    <div data-row="3" data-col="1"></div>
+                    <div data-row="3" data-col="2"></div>
+                    <div class="mina" data-row="3" data-col="3"></div>
+                    <div data-row="3" data-col="4"></div>
+                    <div class="mina" data-row="3" data-col="5"></div>
+                    <div data-row="3" data-col="6"></div>
+                    <div data-row="3" data-col="7"></div>
+                    <div class="mina" data-row="3" data-col="8"></div>
+
+                    <div data-row="4" data-col="0"></div>
+                    <div class="mina" data-row="4" data-col="1"></div>
+                    <div data-row="4" data-col="2"></div>
+                    <div data-row="4" data-col="3"></div>
+                    <div class="mina" data-row="4" data-col="4"></div>
+                    <div data-row="4" data-col="5"></div>
+                    <div data-row="4" data-col="6"></div>
+                    <div data-row="4" data-col="7"></div>
+                    <div class="mina" data-row="4" data-col="8"></div>
+
+                    <div class="mina" data-row="5" data-col="0"></div>
+                    <div data-row="5" data-col="1"></div>
+                    <div data-row="5" data-col="2"></div>
+                    <div class="mina" data-row="5" data-col="3"></div>
+                    <div data-row="5" data-col="4"></div>
+                    <div class="mina" data-row="5" data-col="5"></div>
+                    <div data-row="5" data-col="6"></div>
+                    <div class="mina" data-row="5" data-col="7"></div>
+                    <div data-row="5" data-col="8"></div>
+
+                    <div data-row="6" data-col="0"></div>
+                    <div data-row="6" data-col="1"></div>
+                    <div data-row="6" data-col="2"></div>
+                    <div class="mina" data-row="6" data-col="3"></div>
+                    <div data-row="6" data-col="4"></div>
+                    <div data-row="6" data-col="5"></div>
+                    <div class="mina" data-row="6" data-col="6"></div>
+                    <div data-row="6" data-col="7"></div>
+                    <div data-row="6" data-col="8"></div>
+
+                    <div data-row="7" data-col="0"></div>
+                    <div data-row="7" data-col="1"></div>
+                    <div data-row="7" data-col="2"></div>
+                    <div data-row="7" data-col="3"></div>
+                    <div class="mina" data-row="7" data-col="4"></div>
+                    <div data-row="7" data-col="5"></div>
+                    <div class="mina" data-row="7" data-col="6"></div>
+                    <div data-row="7" data-col="7"></div>
+                    <div data-row="7" data-col="8"></div>
+
+                    <div data-row="8" data-col="0"></div>
+                    <div data-row="8" data-col="1"></div>
+                    <div class="mina" data-row="8" data-col="2"></div>
+                    <div data-row="8" data-col="3"></div>
+                    <div class="mina" data-row="8" data-col="4"></div>
+                    <div data-row="8" data-col="5"></div>
+                    <div class="mina" data-row="8" data-col="6"></div>
+                    <div data-row="8" data-col="7"></div>
+                    <div data-row="8" data-col="8"></div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+
+</html>

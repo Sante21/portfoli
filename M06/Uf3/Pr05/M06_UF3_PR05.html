@@ -1,0 +1,67 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Ejercicio 5 - Información sobre eventos</title>
+
+	<style type="text/css">
+		body {
+			font-family: arial, helvetica;
+		}
+
+		#info {
+			width: 250px;
+			border: thin solid silver;
+			padding: .5em;
+			position: fixed;
+		}
+
+		#info h1 {
+			margin: 0;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1 id="titol"></h1>
+	<div id="info"></div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+<script type="text/javascript">
+	let titulo = document.getElementById("titol");
+	let info = document.getElementById("info");
+
+	document.addEventListener("mousemove", function (e) {
+		let navX = e.clientX;
+		let navY = e.clientY;
+
+		let screenX = e.screenX;
+		let screenY = e.screenY;
+
+		titulo.innerHTML = `Movimiento del ratón`;
+		info.innerHTML = `<h3>Navegador: </h3> x: ${navX} <br> y: ${navY} <br><h3>Pantalla:</h3> x: ${screenX} <br> y: ${screenY}</h3>`;
+		info.style.backgroundColor = '#FFFFFF';
+	})
+	
+	document.addEventListener("keypress", function (e) {
+		let key = e.key;
+		
+		info.style.backgroundColor = '#CCE6FF';
+		titulo.innerHTML = `Tecla presionada`;
+		info.innerHTML = `Se ha apretado la tecla: <span style="font-weight: bold;">${key} </span>`;
+	})
+	
+	document.addEventListener("click", function (e) {
+		info.style.backgroundColor = '#FFFFCC';
+		titulo.innerHTML = `Ratón presionado`;
+		info.innerHTML = `Se ha hecho click en el ratón`;
+	})
+</script>
+
+</html>

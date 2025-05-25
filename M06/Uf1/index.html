@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoli | M06 Uf1</title>
+    <script src="../../script-head.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-3 border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">
+                    <div id="logo"></div>
+                </a>
+
+                <!-- Boton Hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu links -->
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                M06
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/M06/Uf1/index.html">Uf1</a></li>
+                                <li><a class="dropdown-item" href="/M06/Uf2/index.html">Uf2</a></li>
+                                <li><a class="dropdown-item" href="/M06/Uf3/index.html">Uf3</a></li>
+                                <li><a class="dropdown-item" href="/M06/Uf4/index.html">Uf4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                M09
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/M09/Uf1/index.html">Uf1</a></li>
+                                <li><a class="dropdown-item" href="/M09/Uf2/index.html">Uf2</a></li>
+                                <li><a class="dropdown-item" href="/M09/Uf3/index.html">Uf3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2 align-items-center ms-lg-4 mt-3 mt-lg-0">
+                        <i class="fa-solid fa-sun"></i>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                        </div>
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="d-flex justify-content-center p-3">
+            <h2>M06-UF1- JavaScript</h2>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 min-vh-100 m-2">
+                <!-- Connecta 4 -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr1/conecta4.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Conecta 4</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Joc clàssic programat on dos jugadors competeixen per connectar quatre
+                                fitxes en línia.
+                            </p>
+                            <!-- <p class="badge bg-html">HTML</p> -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#conecta4">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="conecta4" aria-labelledby="conecta4Label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Connecta 4</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr2/connecta4.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sopa de lletres -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr2/sopa.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Sopa de lletres</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Joc interactiu on l'usuari ha de trobar paraules ocultes dins d’una
+                                graella de lletres.
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Probar app</a> -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sopa">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="sopa" aria-labelledby="sopaLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Sopa de lletres</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="modal-iframe" src="Pr2/sopa.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pilas i cues -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr3/pilesCues.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Piles i cues</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Exercici pràctic per entendre i aplicar estructures de dades com piles
+                                i cues.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#pilasCues">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="pilasCues" aria-labelledby="pilasCuesLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Piles i Cues</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr3/index.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Simon -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr4/simon.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Simon game</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Joc de memòria on cal repetir la seqüència de colors mostrada pel
+                                sistema.
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Probar app</a> -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#simon">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="simon" aria-labelledby="simonLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Simon</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr4/index.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mastermind -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr5/mastermind.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Mastermind</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Joc de lògica on cal endevinar una combinació secreta de colors amb
+                                pistes.
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Probar app</a> -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#mastermind">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="mastermind" aria-labelledby="mastermindLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Mastermind</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr5/index.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FizzBuzz -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Retos/fizzbuzz.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">FizzBuzz</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Programa que imprimeix nombres seguint la regla de múltiples de 3 i 5.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#fizzbuzz">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="fizzbuzz" aria-labelledby="FizzBuzzLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">FizzBuzz</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Retos/1-FizzBuzz.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fibonacci -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Retos/fibonacci.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Fibonacci</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Càlcul i visualització de la successió de Fibonacci fins a un límit
+                                donat.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#fibonacci">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="fibonacci" aria-labelledby="fibonacciLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Fibonacci</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Retos/3-Fibonacci.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

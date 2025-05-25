@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div.container {
+    margin: 5mm;
+    width: 95mm;
+    height: 30mm;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+}
+
+div.items {
+    width: 26mm;
+    height: 21mm;
+    margin-top: 4mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+div.flexDirRow {
+    width: 95mm;
+    height: 30mm;
+    display: flex;
+    flex-direction: row;
+}
+
+div.flexDirRowRev {
+    width: 95mm;
+    height: 30mm;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+div.itemsDir {
+    width: 22mm;
+    height: 21mm;
+    margin-top: 4mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+    color: white;
+    margin: 1mm;
+    box-shadow: 1mm 1mm #B8B3B8;
+    text-align: center;
+}
+
+div.containerDir {
+    display: flex;
+}
+
+div.flexDirCol {
+    display: flex;
+    flex-direction: column;
+}
+
+div.flexDirColRev {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div.itemsDirCol {
+    width: 18mm;
+    height: 12mm;
+    margin-top: 4mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+    color: white;
+    margin: 1mm;
+    box-shadow: 1mm 1mm #B8B3B8;
+    text-align: center;
+}
+
+
+div.containerWrap {
+    margin: 2mm;
+    width: 95mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 10mm;
+}
+
+div.flexWrap1 {
+    margin: 2mm;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.itemsWrap {
+    width: 20mm;
+    height: 15mm;
+    margin: 1mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+div.justify1 {
+    margin: 2mm;
+    width: 100mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 15mm;
+    display: flex;
+    justify-content: flex-start;
+}
+
+div.justify2 {
+    margin: 2mm;
+    width: 100mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.justify3 {
+    margin: 2mm;
+    width: 100mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    justify-content: center;
+}
+
+div.justify4 {
+    margin: 2mm;
+    width: 100mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.justify5 {
+    margin: 2mm;
+    width: 100mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.justify6 {
+    margin: 2mm;
+    width: 100mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.itemJustify {
+    width: 20mm;
+    height: 15mm;
+    margin: 2mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+
+div.justify6 {
+    margin: 2mm;
+    width: 100mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+div.alignItemPadre {
+    display: flex;
+}
+
+div.itemAlign {
+    width: 20mm;
+    height: 20mm;
+    margin: 2mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+div.itemAlignStretch {
+    width: 20mm;
+    margin: 2mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+div.itemAlignBase1 {
+    width: 30mm;
+    height: 20mm;
+    margin: 2mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+div.itemAlignBase2 {
+    width: 30mm;
+    height: 30mm;
+    margin: 2mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+div.itemAlignBase3 {
+    width: 30mm;
+    height: 35mm;
+    margin: 2mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+div.itemAlignBase4 {
+    width: 30mm;
+    height: 15mm;
+    margin: 2mm;
+    background-color: #F69521;
+    border: 1px solid black;
+    border-radius: 2mm;
+}
+
+div.alignItems1 {
+    margin: 2mm;
+    width: 90mm;
+    height: 50mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 20mm;
+    display: flex;
+    align-items: flex-start;
+}
+
+div.alignItems2 {
+    margin: 2mm;
+    width: 90mm;
+    height: 50mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 20mm;
+    display: flex;
+    align-items: flex-end;
+}
+
+div.alignItems3 {
+    margin: 2mm;
+    width: 90mm;
+    height: 50mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    align-items: center;
+}
+
+div.alignItems4 {
+    margin: 2mm;
+    width: 90mm;
+    height: 50mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    align-items: stretch;
+}
+
+div.alignItems5 {
+    margin: 2mm;
+    width: 180mm;
+    height: 50mm;
+    background-color: #995DB5;
+    border: 1px solid black;
+    border-radius: 5mm;
+    margin-top: 5mm;
+    display: flex;
+    align-items: baseline;
+}

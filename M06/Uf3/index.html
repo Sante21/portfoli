@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoli | M06 Uf3</title>
+    <script src="../../script-head.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-3 border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">
+                    <div id="logo"></div>
+                </a>
+
+                <!-- Boton Hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu links -->
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                M06
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/M06/Uf1/index.html">Uf1</a></li>
+                                <li><a class="dropdown-item" href="/M06/Uf2/index.html">Uf2</a></li>
+                                <li><a class="dropdown-item" href="/M06/Uf3/index.html">Uf3</a></li>
+                                <li><a class="dropdown-item" href="/M06/Uf4/index.html">Uf4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                M09
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/M09/Uf1/index.html">Uf1</a></li>
+                                <li><a class="dropdown-item" href="/M09/Uf2/index.html">Uf2</a></li>
+                                <li><a class="dropdown-item" href="/M09/Uf3/index.html">Uf3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2 align-items-center ms-lg-4 mt-3 mt-lg-0">
+                        <i class="fa-solid fa-sun"></i>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                        </div>
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="d-flex justify-content-center p-3">
+            <h2>M06-UF3- Javascript + DOM</h2>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 min-vh-100 m-2">
+                <!-- DOM Basic -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr01/DOMbasic.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">DOM Básic</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Mostra quants enllaços hi ha dins d’un paràgraf específic.</p>
+                            <!-- <p class="badge bg-html">HTML</p> -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#dombasic">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="dombasic" aria-labelledby="dombasicLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">DOM Basic</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr01/M06_UF3_PR01.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOM Basic Ocultar Text -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr02/ocultarText.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Ocultar text</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Afegeix un botó per mostrar text amb efecte de “seguir llegint”.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#ocultText">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="ocultText" aria-labelledby="ocultTextLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Ocultar Text</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="modal-iframe" src="Pr02/M06_UF3_PR02.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOM Basic Lista interactiva -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr03/lista.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Lista interactiva</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Introdueix elements en un input i afegeix-los automàticament a una
+                                llista.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#lista">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="lista" aria-labelledby="listaLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Lista interactiva</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr03/M06_UF3_PR03.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOM Basic Mostrar i Ocultar -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr04/mostrarOcultar.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Mostrar i Ocultar</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Interacció bàsica per mostrar o ocultar un paràgraf amb un botó.</p>
+                            <!-- <a href="#" class="btn btn-primary">Probar app</a> -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#mostrarOcultar">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="mostrarOcultar" aria-labelledby="mostrarOcultarLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Mostrar i Ocultar</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr04/M06_UF3_PR04.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOM Basic Moviment del Ratoli -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr05/movimentRatoli.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Moviment del Ratoli</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Mostra en temps real les coordenades del cursor dins la pantalla.</p>
+                            <!-- <a href="#" class="btn btn-primary">Probar app</a> -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#movimentRatoli">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="movimentRatoli" aria-labelledby="movimentRatoliLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Moviment del Ratoli</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr05/M06_UF3_PR05.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOM Basic Informació de Clicks -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr06/infoClick.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Informació de Click</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Indica on has fet clic (cantonada superior, inferior, etc.).</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#infoClick">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="infoClick" aria-labelledby="infoClickLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Informació de Click</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr06/M06_UF3_PR06.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOM Basic Contador de Caracters -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr07/contadorCaract.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Contador de Caracters</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Comptador en directe que limita l’entrada de text a 100 caràcters.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#contadorCaract">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="contadorCaract" aria-labelledby="contadorCaractLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Contador de Caracters</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr07/M06_UF3_PR07.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOM To Do List -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Pr10/todolist.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">ToDo List</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Llista de tasques amb afegir, eliminar i arrossegar per ordenar.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#todolist">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="todolist" aria-labelledby="todolistLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">ToDo List</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Pr10/M06_UF3_PR10.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
