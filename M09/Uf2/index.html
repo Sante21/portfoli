@@ -40,8 +40,8 @@
                             <a class="nav-link active fw-semibold" aria-current="page" href="../../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown px-2">
-                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 M06
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -59,7 +59,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li><a class="dropdown-item" href="/M09/Uf1/index.html">Uf1</a></li>
                                 <li><a class="dropdown-item" href="/M09/Uf2/index.html">Uf2</a></li>
-                                <li><a class="dropdown-item" href="/M09/Uf3/index.html">Uf3</a></li>
+                                <!-- <li><a class="dropdown-item" href="/M09/Uf3/index.html">Uf3</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -78,43 +78,227 @@
 
     <main>
         <div class="d-flex justify-content-center p-3">
-            <h2>M09-UF1- HTML - CSS</h2>
+            <h2>M09-UF2- Elements Multimèdia, creació i integració</h2>
         </div>
 
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 min-vh-100 m-2">
-                <!-- Primera maquetacion -->
+                <!-- Multimedia -->
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top cardimg" src="Primera Maquetació/maquetacion.jpg" alt="Card image">
+                        <img class="card-img-top cardimg" src="Multimedia/multimedia.png" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Primera maquetació</h4>
+                            <h4 class="card-title">Multimedia</h4>
                             <div class="lenguages">
                                 <span class="badge bg-html">HTML</span>
                                 <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
                             </div>
-                            <p class="card-text">Maquetació senzilla d’una web només amb HTML i CSS bàsic.</p>
+                            <p class="card-text">Pràctica bàsica d’inserció de vídeos amb controls personalitzats.</p>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#maquetacio">
+                                data-bs-target="#multimedia">
                                 Probar app
                             </button>
                         </div>
                         <!-- The Modal -->
-                        <div class="modal fade" id="maquetacio" aria-labelledby="maquetacioLabel" aria-hidden="true">
+                        <div class="modal fade" id="multimedia" aria-labelledby="multimediaLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
 
                                 <div class="modal-content">
                                     <!-- Modal Header -->
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Primera maquetació</h4>
+                                        <h4 class="modal-title">Multimedia</h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
                                         <div class="ratio ratio-16x9">
-                                            <iframe class="embed-responsive-item"
-                                                src="Primera Maquetació/index.html"></iframe>
+                                            <iframe class="embed-responsive-item" src="Multimedia/index.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangles -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Canvas/rectangles.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Rectangles</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Dibuix de múltiples rectangles al canvas amb diversos nivells de dificultat.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#rectangles">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="rectangles" aria-labelledby="rectanglesLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Rectangles</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Canvas/index.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Camins -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="paths/camins.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Camins</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Creació de formes i línies usant paths dins del canvas.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#camins">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="camins" aria-labelledby="caminsLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Camins</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="paths/index.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Corbes -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="curves/corbes.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Corbes</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Dibuix de corbes complexes al canvas amb instruccions avançades.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#corbes">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="corbes" aria-labelledby="corbesLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Corbes</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="curves/index.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sprites -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Images/sprites.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Sprites</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Ús de sprites al canvas per animacions bàsiques amb imatges.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#sprites">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="sprites" aria-labelledby="spritesLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Sprites</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="Images/index.html"></iframe>
                                         </div>
                                     </div>
 

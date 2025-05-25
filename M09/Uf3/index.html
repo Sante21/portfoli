@@ -40,8 +40,8 @@
                             <a class="nav-link active fw-semibold" aria-current="page" href="../../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown px-2">
-                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 M06
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -76,9 +76,61 @@
         </nav>
     </header>
     <main>
+        <div class="d-flex justify-content-center p-3">
+            <h2>M09-UF3- Accessibilitat i usabilitat web</h2>
+        </div>
 
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 min-vh-100 m-2">
+                <!-- Media Query -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top cardimg" src="Multimedia/multimedia.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Media Query</h4>
+                            <div class="lenguages">
+                                <span class="badge bg-html">HTML</span>
+                                <span class="badge bg-css">CSS</span>
+                                <span class="badge bg-js">JavaScript</span>
+                            </div>
+                            <p class="card-text">Pràctica bàsica d’inserció de vídeos amb controls personalitzats.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#mediaquery">
+                                Probar app
+                            </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="mediaquery" aria-labelledby="mediaqueryLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Media Query</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="mediaQuery/index.html"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-
 </body>
 
 </html>
