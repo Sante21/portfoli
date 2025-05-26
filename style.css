@@ -174,3 +174,13 @@ span.badge {
     gap: 2mm;
     margin: 5mm 0mm;
 }
+
+.hobby {
+    width: 90%;
+    border-radius: 2mm;
+    transition: 0.2s;
+}
+
+.hobby:hover {
+    transform: scale(1.03);
+}
